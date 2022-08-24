@@ -1,15 +1,72 @@
 /* google fonts */
 
 :root {
-    --color1: #003049;
-    --color2: #d62828;
-    --color3: #f77f00;
-    --color3: #fcbf49;
-    --color3: #eae2b7;
-  }
-  
-* { 
-    box-sizing: border-box;
+  --color1: #003049;
+  --color2: #d62828;
+  --color3: #f77f00;
+  --color4: #fcbf49;
+  --color5: #eae2b7;
 }
 
-  
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+header .img-expo{
+  display: flex;  
+  justify-content: center;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu */
+nav.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+nav.menu ul {
+  list-style-type: none;
+  display: flex;
+  margin: 30px;
+}
+
+nav.menu li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: var(--color3);
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+nav.menu li a:hover {
+  background-color: var(--color2);
+  color: var(--color5);
+}
+
+nav.menu .logo a img {
+  max-height: 50px;
+  cursor: pointer;
+  object-fit: contain;
+  border: 0 none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+nav.menu .logo {
+  margin-left: auto;
+}
