@@ -123,3 +123,72 @@ input[type=text]:focus {
   background-color: var(--color2);
   color: var(--color5);
 }
+
+#clima {
+  background-color: #fcbf49;;
+  text-align: center;
+}
+
+#clima h4{
+    color: azure;  
+}
+
+#clima1, #clima2, #clima3{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  border-radius: 10px;
+}
+
+#clima1{
+  background-color: #f77f00;
+  color: azure;
+}
+
+#clima2{
+  background-color: #003049;
+  color: azure;
+}
+
+#clima3{
+  background-color: #f77f00;
+  color: azure;
+}
+
+/* ---------------------------- */
+/* Showcase */
+
+.showcase-img {
+  float: left;
+  width: 50%;
+}
+
+.showcase-img img {
+  width: 90%;
+}
+
+.showcase-text {
+  float: right;
+  width: 50%;
+  padding: 20px 20px 20px 40px;
+}
+
+/* ------------- */
+.showcase-text h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 46px;
+}
+.showcase-text .title-one {
+  font-size: 29px;
+  font-weight: 400;
+}
+.showcase-text .title-two {
+  color: #841934;
+}
+.showcase-text .large {
+  padding-top: 20px;
+}
+
+/* ------------------------------- */
