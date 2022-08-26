@@ -79,7 +79,7 @@ nav.menu .logo {
 }
 
 /* main, evento*/
-main, #evento {
+#evento {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -87,9 +87,9 @@ main, #evento {
   justify-content: center;
 }
 
-#home {
+/* #home {
   background-color: var(--color5);
-}
+} */
 
 .titulo h1 {
   text-align: center;
