@@ -174,60 +174,7 @@ input[type=text]:focus {
   text-transform: uppercase;
 }
 
-.btn-enviar:hover {
+.btn-enviar:hover{
   background-color: var(--color2);
   color: var(--color5);
-}
-
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color1);
-  color: #fff;
-}
-
-.social-network {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.social-network a, .whatsapp{
-  margin: 5px 5px;
-  text-align: center;
-  padding: 5px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 15px;
-  border-radius: 5px;
-}
-
-.social-network a:hover,
-footer :nth-child(3) a:hover {
-  background-color: #000;
-}
-
-.facebook {
-  background: blue;
-  color: white;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.instagram {
-  background-color: var(--color2);
-  color: white;
-}
-
-.whatsapp {
-  background-color: green;
-  color: white;
-  margin-right: 5px;
-}
-
-footer :nth-child(3) {
-  margin-right: 5px;
 }
