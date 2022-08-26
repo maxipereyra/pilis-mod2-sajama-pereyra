@@ -16,9 +16,12 @@ html,
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   scroll-behavior: smooth;
+  padding: 10px;
+  background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
 }
-header .img-expo{
-  display: flex;  
+
+header .img-expo {
+  display: flex;
   justify-content: center;
   height: 200px;
   padding: 0;
@@ -71,6 +74,58 @@ nav.menu .logo {
   margin-left: auto;
 }
 
+.fa {
+  margin-right: 5px;
+}
+
+/* main, evento*/
+#evento {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* #home {
+  background-color: var(--color5);
+} */
+
+.titulo h1 {
+  text-align: center;
+}
+
+
+/* Evento Galery */
+
+.gallery-item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.lg-actions .lg-prev:after {
+  content: "<<" !important;
+}
+
+.lg-actions .lg-next::before {
+  content: ">>" !important;
+}
+
+.lg-toolbar .lg-close:after {
+  content: "X" !important;
+}
+
+.zoom {
+  transition: transform .2s; 
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+
+.lg-toolbar .lg-download:after {
+  display: none;
+}
 
 /* registro */
 #registro p {
@@ -124,61 +179,57 @@ input[type=text]:focus {
   color: var(--color5);
 }
 
-#clima {
-  background-color: #fcbf49;;
+/* footer */
+.footer {
+  display: flex; 
+  justify-content: space-between;
+  background-color: var(--color1);
+  color: #fff;
+}
+
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.social-network a ,
+.whatsapp {
   text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
-#clima h4{
-    color: azure;  
+.social-network a:hover,
+.whatsapp:hover {
+  background-color: #000;
 }
 
-#clima1, #clima2, #clima3{
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  width: 200px;
-  border-radius: 10px;
+.facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 5px;
 }
 
-#clima1{
-  background-color: #f77f00;
-  color: azure;
+.twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-#clima2{
-  background-color: #003049;
-  color: azure;
+.instagram {
+  background: var(--color2);
+  color: white;
 }
 
-#clima3{
-  background-color: #f77f00;
-  color: azure;
+.whatsapp {
+  background: green;
+  color: white;
 }
 
-/* ---------------------------- */
-/* Showcase */
-
-.showcase-img {
-  float: left;
-  width: 50%;
-}
-
-.showcase-img img {
-  width: 90%;
-}
-
-.showcase-text {
-  float: right;
-  width: 50%;
-  padding: 20px 20px 20px 40px;
-}
-
-/* ------------- */
-.showcase-text h1 {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 46px;
+footer :nth-child(3) {
+  margin-right: 5px;
 }
 .showcase-text .title-one {
   font-size: 29px;
