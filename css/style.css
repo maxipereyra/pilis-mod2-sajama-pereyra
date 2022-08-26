@@ -178,3 +178,56 @@ input[type=text]:focus {
   background-color: var(--color2);
   color: var(--color5);
 }
+
+/* footer */
+.footer {
+  display: flex; 
+  justify-content: space-between;
+  background-color: var(--color1);
+  color: #fff;
+}
+
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.social-network a ,
+.whatsapp {
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.social-network a:hover,
+.whatsapp:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 5px;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.instagram {
+  background: var(--color2);
+  color: white;
+}
+
+.whatsapp {
+  background: green;
+  color: white;
+}
+
+footer :nth-child(3) {
+  margin-right: 5px;
+}

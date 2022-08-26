@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Expo Emprendedor</title>
 </head>
 
@@ -21,9 +24,9 @@
         </header>
         <nav class="menu">
             <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#evento">El Evento</a></li>
-                <li><a href="#registro">Registrate</a></li>
+                <li><a href="#nosotros"><i class="fa fa-user"></i>Nosotros</a></li>
+                <li><a href="#evento"><i class="fa fa-calendar"></i>El Evento</a></li>
+                <li><a href="#registro"><i class="fa fa-envelope-o" aria-hidden="true"></i>Registrate</a></li>
             </ul>
             <div class="logo">
                 <a href="#home"><img src="assets/img/logo.jpg" alt="logo"></a>
@@ -35,13 +38,34 @@
         </main>
         <hr>
         <section id="evento">
+            <h1>Galeria de imagenes</h1>
+            <div class="gallery-container" id="gallery-container">
+                <a class="gallery-item"
+                    data-src="https://images.unsplash.com/photo-1588093413519-17cec3f64e40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                    data-sub-html="<p> Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1588093413519-17cec3f64e40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
+                </a>
+                <a class="gallery-item"
+                    data-src="https://images.unsplash.com/photo-1563502310703-1ffe473ad66d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1443&q=80"
+                    data-sub-html="<p> Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1563502310703-1ffe473ad66d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
+                </a>
+                <a class="gallery-item"
+                    data-src="https://images.unsplash.com/photo-1613541444699-39429d990353?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                    data-sub-html="<p> Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1613541444699-39429d990353?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
+                </a>
+            </div>
 
         </section>
         <hr>
         <section id="nosotros">
-            
-        </section>
 
+        </section>
+        <hr>
         <section id="registro">
             <p>Sumate al evento para potenciar el comercio local.</p>
             <p>Luego te contactamos</p>
@@ -57,38 +81,47 @@
                     <button class="btn-enviar" id="enviar">Enviar</button>
                 </form>
             </div>
-
-
         </section>
         <section id="clima">
             <div id="contenedor">
                 <h3>Así está el clima en Ciudad Cultural</h3>
                 <!-- <h5>Ubicacion: -24.183223875202245, -65.33121832411764 </h5> -->
-               <!--  <h5>key: 6b9584e08bcd6d41e5170215383e3965</h5> -->
-                  
+                <!--  <h5>key: 6b9584e08bcd6d41e5170215383e3965</h5> -->
+
                 <div id="clima1">
                     <h1 id="temperatura-valor"></h1>
                     <h1 id="temperatura-detalle"></h1>
                 </div>
-    
-                <div id="clima2">                    
+
+                <div id="clima2">
                     <img id="icono-animado" src="" alt="" height="128" width="128">
                     <h2 id="ubicacion"></h2>
                 </div>
-    
+
                 <div id="clima3">
                     <h3>Velocidad del Viento</h3>
                     <h1 id="viento-velocidad"></h1>
-                </div>    
-    
+                </div>
+
             </div>
 
         </section>
-        <footer>
-
+        <footer class="footer">
+            <div class="social-network">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p>- &#9400 2022 Desarrollado por Fabián A'Sajama, Máximo Pereyra - </p>
+            <p><a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>388-4569678</p>
         </footer>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('gallery-container'));
+    </script>
+
 </body>
 
 </html>
