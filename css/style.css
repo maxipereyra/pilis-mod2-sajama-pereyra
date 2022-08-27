@@ -1,4 +1,5 @@
 /* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap');
 
 :root {
   --color1: #003049;
@@ -14,10 +15,10 @@
 
 html,
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   scroll-behavior: smooth;
   padding: 10px;
-  background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
+  background-color: #e8f0ff;
 }
 
 header .img-expo {
@@ -79,7 +80,8 @@ nav.menu .logo {
 }
 
 /* main, evento*/
-#evento {
+#evento,
+section {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -87,14 +89,11 @@ nav.menu .logo {
   justify-content: center;
 }
 
-/* #home {
-  background-color: var(--color5);
-} */
-
-.titulo h1 {
+#evento .titulo {
   text-align: center;
+  color: var(--color1);
+  text-transform: uppercase;
 }
-
 
 /* Evento Galery */
 
@@ -128,8 +127,17 @@ nav.menu .logo {
 }
 
 /* registro */
-#registro p {
+#registro {
+  padding-top: 20px;
+}
+
+#registro p, 
+.contenedor-clima h3{
   text-align: center;
+  text-transform: uppercase;
+  color: var(--color1);
+  font-weight: bold;
+  
 }
 
 .container-form {
@@ -246,31 +254,31 @@ footer :nth-child(3) {
 
 
 
-.container {
+/*.container {
   margin: auto;
   max-width: 1300px;
   overflow: auto;
-  padding: 0 10px;  /* superior inf, izq derecha */
-}
+  padding: 0 10px;   superior inf, izq derecha 
+}*/
 
 
 /* About */
-#about {
-  background: #d62828;;
-  padding: 50px 0;
+.container-about {
+  display: flex;
+  align-items: center;
 }
 
 /* a la izquierda */
-.about-title {
-  float: left;
-  width: 45%;
-  padding-top: 50px; /* espacio de arriba */
+.about-title h2 {  
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: var(--color1);
 }
 
-/* a la derecha */
 .about-description {
-  float: right;
-  width: 55%;
+  padding: 25px;
+  width: 50%; 
 }
 
 .about-description .large {  
@@ -280,11 +288,10 @@ footer :nth-child(3) {
 
 /* General */
 /* titulo de quien soy */
-h2 { 
-    font-size: 40px; 
+.about-description h2 { 
+    font-size: 25px; 
     text-transform: uppercase;
-    font-weight: 100;
-    color: #FFF;
+    font-weight: 50;
   }
   
   p {
@@ -319,4 +326,78 @@ h2 {
     width: 100%;
     height: 100%;
     border-radius: 100%;
+  }
+
+  /* home */
+  .container-home {
+    display: flex;
+    padding: 25px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .showcase-img {
+    /* float: left; */
+    width: 50%;
+  }
+  
+  .showcase-img img {
+    width: 90%;
+  }
+  
+  .showcase-text {
+    /* float: right; */
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .showcase-text h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 46px;
+  }
+  .showcase-text .title-one {
+    font-size: 29px;
+    font-weight: 400;
+  }
+  .showcase-text .title-two {
+    color: var(--color2);
+  }
+  .showcase-text .large {
+    padding-top: 20px;
+  }
+/* clima  */
+
+  #clima {
+    text-align: center;
+    margin: 25px;
+  }
+  
+  #clima h4{
+      color: azure;  
+  }
+  
+  #clima1, #clima2, #clima3{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  #clima1{
+    background-color: var(--color3);
+    color: azure;
+  }
+  
+  #clima2{
+    background-color: var(--color1);
+    color: azure;
+    margin: 10px;
+  }
+  
+  #clima3{
+    background-color: var(--color3);
+    color: azure;
   }
